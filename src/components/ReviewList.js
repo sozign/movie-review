@@ -27,7 +27,7 @@ export function ReviewList({ items, onDelete }) {
   return (
     <ul className="no-bullet">
       {items.map((item) => (
-        <li>
+        <li key={item.id}>
           <ReviewListItem item={item} onDelete={onDelete} />
         </li>
       ))}
